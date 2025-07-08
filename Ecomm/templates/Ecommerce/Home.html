@@ -1,0 +1,706 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Product</title>
+    <link rel="stylesheet" href="{% static 'css/home.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Loading overlay -->
+    <div class="loading-overlay">
+        <img src="{% static 'images/logo.png' %}" alt="Loading..." width="50" height="50">
+    </div>
+
+    <div class="header">
+        <div class="offer fade-in">
+            Get 5% Off your first order, Promo: Order
+        </div>
+        <div class="phone fade-in">
+            +212 721-221670
+        </div>
+        <div class="location fade-in">
+            Made in morocco this brand
+        </div>
+    </div>
+
+    <div class="navbar">
+        <div class="logo">
+            <img src="{% static 'images/logo.png' %}" alt="Logo" width="150" height="50">
+        </div>
+        <div class="nav-links">
+            <a href="#" class="active" data-page="home">Home</a>
+            <a href="#" data-page="product">Product</a>
+            <a href="#" data-page="collections">Collections</a>
+            <a href="#" data-page="gifts">Gifts</a>
+            <a href="#" data-page="gifts">Spinner</a>
+            <a href="#" data-page="gifts">Login</a>
+            <img src="{% static 'images/language.jpeg' %}" alt="language" class="pic" width="30" height="30">
+        </div>
+    </div>
+
+    <main id="content">
+        <div class="slider-container">
+            <div class="slider">
+                <div class="slide">
+                    <div class="image-section">
+                        <img src="{% static 'images/slide1.png' %}" alt="Product 1">
+                    </div>
+                    <div class="content-section">
+                        <div class="slide-text">Crafted with care, made for the rare.</div>
+                        <img src="{% static 'images/logo.png' %}" alt="Logo" class="logo">
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="image-section">
+                        <img src="{% static 'images/slide2.png' %}" alt="Product 2">
+                    </div>
+                    <div class="content-section">
+                        <div class="slide-text">Premium quality for those who dare to be different.</div>
+                        <img src="{% static 'images/logo.png' %}" alt="Logo" class="logo">
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="image-section">
+                        <img src="{% static 'images/slide3.png' %}" alt="Product 3">
+                    </div>
+                    <div class="content-section">
+                        <div class="slide-text">Designed for excellence, created for you.</div>
+                        <img src="{% static 'images/logo.png' %}" alt="Logo" class="logo">
+                    </div>
+                </div>
+            </div>
+            <div class="navigation-dots"></div>
+        </div>
+
+        <div class="section-text1 fade-in">
+            Discover the Style That Fits You Perfectly
+        </div>
+    </main>
+
+    <section class="collections-section">
+        <h2 class="section-title">New Collection</h2>
+        <div class="collections-grid">
+            <div class="collection-card">
+                <img src="{% static 'images/slide1.png' %}" alt="Summer Essentials" class="collection-image">
+                <div class="collection-tag">New Arrival</div>
+                <div class="collection-info">
+                    <h3>Summer Essentials</h3>
+                    <p>Light and breathable pieces for warm days</p>
+                    <div class="collection-price">From 299.99DH</div>
+                </div>
+            </div>
+
+            <div class="collection-card">
+                <img src="{% static 'images/cap.png' %}" alt="Urban Collection" class="collection-image">
+                <div class="collection-tag">Best Seller</div>
+                <div class="collection-info">
+                    <h3>Urban Collection</h3>
+                    <p>Modern streetwear with a traditional twist</p>
+                    <div class="collection-price">From 149.99DH</div>
+                </div>
+            </div>
+
+            <div class="collection-card">
+                <img src="{% static 'images/slide3.png' %}" alt="Traditional Series" class="collection-image">
+                <div class="collection-tag">Limited Edition</div>
+                <div class="collection-info">
+                    <h3>Traditional Series</h3>
+                    <p>Handcrafted with authentic Moroccan designs</p>
+                    <div class="collection-price">From 199.99DH</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="unique-section">
+        <h2 class="animate__animated animate__fadeInDown section-text1">What Makes Us Unique</h2>
+        <div class="cards-container">
+          <!-- Card 1 -->
+          <div class="card animate__animated animate__fadeInUp">
+            <div class="card-icon" style="color:black">OJ</div>
+            <h3>System Points</h3>
+            <p>When you create an account here, you earn points for every order you place. 
+                You can also use these points to place orders instead of money once you've accumulated enough.
+            </p>
+          </div>
+          <!-- Card 2 -->
+          <div class="card animate__animated animate__fadeInUp animate__delay-1s">
+            <div class="card-icon" style="color:black">OJ</div>
+            <h3>First Order</h3>
+            <p>When you create an account here, you get a 20% discount on your first order.</p>
+          </div>
+          <!-- Card 3 -->
+          <div class="card animate__animated animate__fadeInUp animate__delay-2s">
+            <div class="card-icon" style="color:black">OJ</div>
+            <h3>Spinner by Points</h3>
+            <p>When you earn enough points, you can spin the wheel to win a gift from the system, such as a shirt, T-shirt, or cologne.</p>
+          </div>
+          <!-- Card 4 -->
+          <div class="card animate__animated animate__fadeInUp animate__delay-3s">
+            <div class="card-icon" style="color:black">OJ</div>
+            <h3>Try Outfit</h3>
+            <p>When you create an account, you can use the 'Try Outfit' option to preview how different items like caps, T-shirts, shorts, and shoes look on you</p>
+          </div>
+          <!-- Card 5 -->
+          <div class="card animate__animated animate__fadeInUp animate__delay-4s">
+            <div class="card-icon" style="color:black">OJ</div>
+            <h3>Free Delivery</h3>
+            <p>Get free delivery on all orders over 400 DH. No extra fees—just shop, order, and enjoy fast delivery to your doorstep!</p>
+         </div>
+         <div class="card animate__animated animate__fadeInUp animate__delay-4s">
+            <div class="card-icon" style="color:black">OJ</div>
+            <h3>helped system</h3>
+            <p>We created a system to help you find the best clothes you like. All you need to do is answer a few questions to filter your choices, and you'll see only the clothes that suit your preferences.</p>
+        </div>
+        </div>
+      </section>
+    
+
+      <div class="cursor-follow" id="customCursor"></div>
+  
+      <section class="hero">
+        <div class="glitch-container">
+          <div class="glitch-bg"></div>
+          <div class="glitch-effect" id="glitchEffect"></div>
+        </div>
+        
+        <div class="moving-stripes" id="movingStripes"></div>
+        <div class="floating-shapes" id="floatingShapes"></div>
+        <div class="parallax-bg" id="parallaxBg"></div>
+        
+        <div class="hero-content">
+          <h1 class="brand-name">
+            ECLIPSE
+            <span class="brand-name-overlay">ECLIPSE</span>
+          </h1>
+          <p class="tagline">REDEFINING THE BOUNDARIES OF FASHION</p>
+          <button class="cta-button">EXPLORE NOW</button>
+        </div>
+        
+        <div class="feature-cards">
+          <div class="feature-card">
+            <div class="card-icon">
+              <svg viewBox="0 0 24 24">
+                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+              </svg>
+            </div>
+            <h3 class="card-title">Crafted</h3>
+            <p class="card-description">Handmade with passion and precision</p>
+            <div class="flow-line"></div>
+          </div>
+          
+          <div class="feature-card">
+            <div class="card-icon">
+              <svg viewBox="0 0 24 24">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+              </svg>
+            </div>
+            <h3 class="card-title">Premium</h3>
+            <p class="card-description">Finest materials from around the world</p>
+            <div class="flow-line"></div>
+          </div>
+          
+          <div class="feature-card">
+            <div class="card-icon">
+              <svg viewBox="0 0 24 24">
+                <polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline>
+                <polyline points="17 6 23 6 23 12"></polyline>
+              </svg>
+            </div>
+            <h3 class="card-title">Trending</h3>
+            <p class="card-description">Always ahead of fashion curves</p>
+            <div class="flow-line"></div>
+          </div>
+          
+          <div class="feature-card">
+            <div class="card-icon">
+              <svg viewBox="0 0 24 24">
+                <circle cx="12" cy="12" r="10"></circle>
+                <circle cx="12" cy="12" r="4"></circle>
+                <line x1="4.93" y1="4.93" x2="9.17" y2="9.17"></line>
+                <line x1="14.83" y1="14.83" x2="19.07" y2="19.07"></line>
+                <line x1="14.83" y1="9.17" x2="19.07" y2="4.93"></line>
+                <line x1="4.93" y1="19.07" x2="9.17" y2="14.83"></line>
+              </svg>
+            </div>
+            <h3 class="card-title">Unique</h3>
+            <p class="card-description">Limited editions that stand out</p>
+            <div class="flow-line"></div>
+          </div>
+        </div>
+      </section>
+
+      <div class="collection-header">
+        New Collection February
+      </div>
+      
+      <div class="collection-carousel">
+        <div class="product-card">
+          <img src="{% static 'images/slide1.png' %}" class="product-image" alt="Green hoodie with graphic print" style="background-color: #355E3B;">
+          <div class="product-info">
+            All New Design Hoodie
+          </div>
+
+        </div>
+        
+        <div class="product-card">
+          <img src="{% static 'images/slide2.png' %}" class="product-image" alt="White Chicago hoodie" style="background-color: #f5f5f5;">
+          <div class="product-info">
+            All New Design Hoodie
+          </div>
+
+        </div>
+        
+        <div class="product-card">
+          <img src="{% static 'images/slide3.png' %}" class="product-image" alt="Black varsity jacket" style="background-color: #000;">
+          <div class="product-info">
+            All New Design Hoodie
+          </div>
+
+        </div>
+        
+        <div class="product-card">
+          <img src="{% static 'images/cap.png' %}" class="product-image" alt="Red patchwork hoodie" style="background-color: #8B0000;">
+          <div class="product-info">
+            All New Design Hoodie
+          </div>
+
+        </div>
+        
+        <div class="product-card">
+          <img src="{% static 'images/product2.png' %}" class="product-image">
+          <div class="product-info">
+            All New Design Hoodie
+          </div>
+
+        </div>
+
+        <div class="product-card">
+          <img src="{% static 'images/product1.png' %}" class="product-image">
+          <div class="product-info">
+            All New Design Hoodie
+          </div>
+
+        </div>
+      </div>
+      
+      <footer>
+
+        
+        <div class="footer-container">
+            <div class="footer-column">
+                <h3>About Us</h3>
+                <p>We are dedicated to providing the best services and products to our customers. Our mission is to create innovative solutions that make a difference.</p>
+                <div class="social-icons">
+                    <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-column">
+                <h3>Quick Links</h3>
+                <ul class="quick-links">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-column">
+                <h3>Contact Us</h3>
+                <div class="contact-info">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>123 Main Street, Mohammedia, Parc plaza, N3</span>
+                </div>
+                <div class="contact-info">
+                    <i class="fas fa-phone"></i>
+                    <span>+212 721-221670</span>
+                </div>
+                <div class="contact-info">
+                    <i class="fas fa-envelope"></i>
+                    <span>info@oj.com</span>
+                </div>
+            </div>
+            
+            <div class="footer-column">
+                <h3>Newsletter</h3>
+                <p>Subscribe to our newsletter to receive updates and special offers.</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Your Email Address" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        
+        <div class="copyright">
+            <p>&copy; 2025 OJ. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script>
+    // GSAP Animations for Card Entrances
+    gsap.from(".card", {
+        opacity: 0,
+        y: 50,
+        stagger: 0.2,
+        duration: 1,
+        ease: "power3.out",
+        delay: 0.5,
+    });
+    
+    // Hover Effects with GSAP
+    const cards = document.querySelectorAll('.card');
+    
+    cards.forEach(card => {
+        card.addEventListener('mouseenter', () => {
+        gsap.to(card, {
+            scale: 1.05,
+            boxShadow: "0 15px 30px rgba(0, 0, 0, 0.2)",
+            duration: 0.3,
+        });
+        });
+    
+        card.addEventListener('mouseleave', () => {
+        gsap.to(card, {
+            scale: 1,
+            boxShadow: "0 10px 20px rgba(0, 0, 0, 0.1)",
+            duration: 0.3,
+        });
+        });
+    });
+    </script>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Initialize everything
+            initializeLoading();
+            initializeNavigation();
+            initializeSlider();
+            initializeLazyLoading();
+            initializeCollectionAnimations(); // Added new initialization
+        });
+        
+        function initializeLoading() {
+            // Preload critical images
+            const criticalImages = ['logo.png', 'slide1.png','cap.png','slide3.png'];
+            criticalImages.forEach(img => {
+                const image = new Image();
+                image.src = `/static/images/${img}`;
+            });
+        
+            // Handle initial loading animation
+            setTimeout(() => {
+                const overlay = document.querySelector('.loading-overlay');
+                overlay.style.opacity = '0';
+                
+                // Sequence the animations
+                const elements = ['.header', '.navbar', '.slider-container', '.collections-section', '.collection-card'];
+                elements.forEach((selector, index) => {
+                    setTimeout(() => {
+                        document.querySelector(selector).classList.add('loaded');
+                    }, index * 200);
+                });
+        
+                // Remove overlay after animation
+                setTimeout(() => {
+                    overlay.style.display = 'none';
+                }, 500);
+            }, 500);
+        }
+        
+        function initializeCollectionAnimations() {
+            // Create observer for collection cards
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach((entry, index) => {
+                    if (entry.isIntersecting) {
+                        // Add animation with delay based on card index
+                        setTimeout(() => {
+                            entry.target.style.opacity = '1';
+                            entry.target.style.transform = 'translateY(0)';
+                        }, index * 200);
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, {
+                threshold: 0.1
+            });
+        
+            // Add initial styles and observe each card
+            const cards = document.querySelectorAll('.collection-card');
+            cards.forEach((card) => {
+                // Set initial styles
+                card.style.opacity = '0';
+                card.style.transform = 'translateY(30px)';
+                card.style.transition = 'all 0.7s ease-out';
+                observer.observe(card);
+            });
+        }
+        
+        function initializeNavigation() {
+            const navigationCache = new Map();
+            
+            document.querySelectorAll('.nav-links a').forEach(link => {
+                link.addEventListener('click', async (e) => {
+                    e.preventDefault();
+                    const page = e.target.dataset.page;
+                    
+                    try {
+                        // Show loading indicator
+                        document.querySelector('.loading-overlay').style.display = 'flex';
+                        
+                        let content;
+                        if (navigationCache.has(page)) {
+                            content = navigationCache.get(page);
+                        } else {
+                            const response = await fetch(`/${page}`);
+                            content = await response.text();
+                            navigationCache.set(page, content);
+                        }
+                        
+                        // Animate page transition
+                        const mainContent = document.getElementById('content');
+                        mainContent.classList.add('page-transition-out');
+                        
+                        setTimeout(() => {
+                            mainContent.innerHTML = content;
+                            mainContent.classList.remove('page-transition-out');
+                            mainContent.classList.add('page-transition-in');
+                            
+                            // Reinitialize components
+                            if (page === 'home') {
+                                initializeSlider();
+                                initializeCollectionAnimations(); // Reinitialize collection animations
+                            }
+                            
+                            // Update active state
+                            document.querySelector('.active').classList.remove('active');
+                            e.target.classList.add('active');
+                            
+                            // Hide loading
+                            document.querySelector('.loading-overlay').style.display = 'none';
+                        }, 300);
+                        
+                    } catch (error) {
+                        console.error('Navigation failed:', error);
+                        // Show error message to user
+                        alert('Failed to load page. Please try again.');
+                    }
+                });
+            });
+        }
+        
+        function initializeLazyLoading() {
+            const imageObserver = new IntersectionObserver(
+                (entries, observer) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            const img = entry.target;
+                            if (img.dataset.src) {
+                                img.src = img.dataset.src;
+                                img.removeAttribute('data-src');
+                                observer.unobserve(img);
+                            }
+                        }
+                    });
+                },
+                {
+                    rootMargin: '50px 0px',
+                    threshold: 0.1
+                }
+            );
+        
+            document.querySelectorAll('img[data-src]').forEach(img => {
+                imageObserver.observe(img);
+            });
+        }
+        
+        function initializeSlider() {
+            const slider = document.querySelector('.slider');
+            const slides = document.querySelectorAll('.slide');
+            const dotsContainer = document.querySelector('.navigation-dots');
+            let currentSlide = 0;
+            let autoSlideInterval;
+        
+            // Clear existing dots
+            dotsContainer.innerHTML = '';
+        
+            // Create navigation dots
+            slides.forEach((_, index) => {
+                const dot = document.createElement('div');
+                dot.classList.add('dot');
+                if (index === 0) dot.classList.add('active');
+                dot.addEventListener('click', () => goToSlide(index));
+                dotsContainer.appendChild(dot);
+            });
+        
+            function updateDots() {
+                document.querySelectorAll('.dot').forEach((dot, index) => {
+                    dot.classList.toggle('active', index === currentSlide);
+                });
+            }
+        
+            function goToSlide(index) {
+                currentSlide = index;
+                slider.style.transform = `translateX(-${currentSlide * 100}%)`;
+                updateDots();
+            }
+        
+            // Clear and restart auto-advance
+            function resetAutoSlide() {
+                clearInterval(autoSlideInterval);
+                autoSlideInterval = setInterval(() => {
+                    currentSlide = (currentSlide + 1) % slides.length;
+                    goToSlide(currentSlide);
+                }, 3000);
+            }
+        
+            // Initialize auto-advance
+            resetAutoSlide();
+        
+            // Pause on hover
+            slider.addEventListener('mouseenter', () => clearInterval(autoSlideInterval));
+            slider.addEventListener('mouseleave', resetAutoSlide);
+        }
+    </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+          // Create moving stripes
+          const movingStripes = document.getElementById('movingStripes');
+          for (let i = 0; i < 10; i++) {
+            const stripe = document.createElement('div');
+            stripe.className = 'stripe';
+            stripe.style.top = (Math.random() * 100) + 'vh';
+            stripe.style.animationDelay = (Math.random() * 5) + 's';
+            stripe.style.height = (Math.random() * 2 + 1) + 'px';
+            stripe.style.opacity = (Math.random() * 0.5 + 0.2);
+            movingStripes.appendChild(stripe);
+          }
+          
+          // Create floating shapes
+          const floatingShapes = document.getElementById('floatingShapes');
+          const shapeTypes = ['circle', 'rectangle', 'triangle'];
+          
+          for (let i = 0; i < 20; i++) {
+            const shape = document.createElement('div');
+            shape.className = 'shape';
+            
+            const shapeType = shapeTypes[Math.floor(Math.random() * shapeTypes.length)];
+            const size = Math.random() * 50 + 20;
+            
+            shape.style.width = size + 'px';
+            shape.style.height = size + 'px';
+            
+            if (shapeType === 'circle') {
+              shape.style.borderRadius = '50%';
+            } else if (shapeType === 'triangle') {
+              shape.style.width = '0';
+              shape.style.height = '0';
+              shape.style.borderLeft = (size/2) + 'px solid transparent';
+              shape.style.borderRight = (size/2) + 'px solid transparent';
+              shape.style.borderBottom = size + 'px solid rgba(255,255,255,0.5)';
+              shape.style.background = 'transparent';
+              shape.style.border = 'none';
+            }
+            
+            shape.style.left = (Math.random() * 100) + 'vw';
+            shape.style.animationDuration = (Math.random() * 10 + 10) + 's';
+            shape.style.animationDelay = (Math.random() * 5) + 's';
+            shape.style.opacity = Math.random() * 0.5 + 0.2;
+            
+            floatingShapes.appendChild(shape);
+          }
+          
+          // Create parallax background elements
+          const parallaxBg = document.getElementById('parallaxBg');
+          for (let i = 0; i < 5; i++) {
+            const element = document.createElement('div');
+            element.className = 'parallax-element';
+            
+            const size = Math.random() * 500 + 200;
+            element.style.width = size + 'px';
+            element.style.height = size + 'px';
+            element.style.left = (Math.random() * 100) + '%';
+            element.style.top = (Math.random() * 100) + '%';
+            element.style.opacity = Math.random() * 0.3 + 0.1;
+            
+            parallaxBg.appendChild(element);
+          }
+          
+          // Custom cursor
+          const cursor = document.getElementById('customCursor');
+          
+          document.addEventListener('mousemove', function(e) {
+            cursor.style.opacity = '1';
+            cursor.style.left = e.clientX + 'px';
+            cursor.style.top = e.clientY + 'px';
+            
+            // Parallax effect for background elements
+            const parallaxElements = document.querySelectorAll('.parallax-element');
+            parallaxElements.forEach(el => {
+              const speed = 0.05;
+              const x = (window.innerWidth / 2 - e.clientX) * speed;
+              const y = (window.innerHeight / 2 - e.clientY) * speed;
+              el.style.transform = `translate(${x}px, ${y}px)`;
+            });
+          });
+          
+          document.addEventListener('mouseleave', function() {
+            cursor.style.opacity = '0';
+          });
+          
+          // Glitch effect on hover
+          const glitchEffect = document.getElementById('glitchEffect');
+          document.querySelector('.brand-name').addEventListener('mouseover', function() {
+            glitchEffect.style.display = 'block';
+            glitchEffect.style.animation = 'glitch 0.3s infinite';
+            
+            setTimeout(() => {
+              glitchEffect.style.display = 'none';
+              glitchEffect.style.animation = 'none';
+            }, 1000);
+          });
+          
+          // Randomize glitch effect
+          setInterval(function() {
+            if (Math.random() > 0.95) {
+              glitchEffect.style.display = 'block';
+              glitchEffect.style.animation = 'glitch 0.2s infinite';
+              
+              setTimeout(() => {
+                glitchEffect.style.display = 'none';
+                glitchEffect.style.animation = 'none';
+              }, 200);
+            }
+          }, 3000);
+          
+          // Add hover effects to feature cards
+          const featureCards = document.querySelectorAll('.feature-card');
+          featureCards.forEach(card => {
+            card.addEventListener('mouseover', function() {
+              featureCards.forEach(c => {
+                if (c !== card) {
+                  c.style.opacity = '0.6';
+                }
+              });
+            });
+            
+            card.addEventListener('mouseout', function() {
+              featureCards.forEach(c => {
+                c.style.opacity = '1';
+              });
+            });
+          });
+        });
+      </script>
+</body>
+</html>

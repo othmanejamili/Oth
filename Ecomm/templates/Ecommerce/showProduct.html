@@ -1,0 +1,61 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product List</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .product-image {
+            max-width: 100px;
+            height: auto;
+            margin: 5px;
+        }
+        th[data-sort] {
+            cursor: pointer;
+        }
+        th[data-sort]:hover {
+            background-color: #f8f9fa;
+        }
+        .sort-indicator {
+            margin-left: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container mt-4">
+        <h1 class="mb-4">Product List</h1>
+        
+        <div class="table-responsive">
+            <table id="product-table" class="table table-striped table-bordered">
+                <thead class="table-dark">
+                    <tr>
+                        <th data-sort="name">Product Name <span class="sort-indicator d-none">↑</span></th>
+                        <th data-sort="description">Description <span class="sort-indicator d-none">↑</span></th>
+                        <th data-sort="price">Price <span class="sort-indicator d-none">↑</span></th>
+                        <th data-sort="size">Size <span class="sort-indicator d-none">↑</span></th>
+                        <th>Images</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Data will be loaded here -->
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Pagination controls -->
+        <div class="d-flex justify-content-between align-items-center mt-3">
+            <button id="prevPage" class="btn btn-primary">Previous</button>
+            <span id="currentPage">Page 1</span>
+            <button id="nextPage" class="btn btn-primary">Next</button>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        const csrfToken = "{{ csrf_token }}";
+    </script>
+    <script src="{% static 'js/fetchProducts.js' %}"></script>
+</body>
+</html>
