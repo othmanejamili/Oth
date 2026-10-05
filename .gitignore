@@ -1,0 +1,34 @@
+# Virtual environment
+venv/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Environment variables
+.env
+
+# .gitignore
+.env
+.env.local
+.env.*.local
+*.env
+secrets/
+credentials/
+
+.env
+*.pyc
+__pycache__/
+db.sqlite3
+/media/
+/staticfiles/
+/logs/
+logs/django.log
+logs/cache.log
+/logs/django.log
+/logs/cache.log
+*.http
+# IDE / OS
+.vscode/
+.idea/
+.DS_Store
